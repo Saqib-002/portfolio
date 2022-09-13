@@ -1,6 +1,8 @@
-
-.menu-items{
+nav{
+    display:inline;
     width: 10.5vw;
+}
+.menu-items{
     height: 90vh;
     display: flex;
     flex-direction: column;

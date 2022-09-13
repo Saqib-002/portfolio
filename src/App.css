@@ -1,22 +1,22 @@
 .App{
     display:grid;
-    grid-template-columns: 2;
-    grid-template-rows: 2;
-    /* width:100vw; */
+    grid-template-areas: 
+    "header header"
+    "nav main"
+    "footer footer"
+    ;
 }
-.header{
+header{
     color:white;
-    grid-column: 1/2;
-    grid-row: 1;
+    grid-area: header;
 }
-.footer{
+footer{
     color: aliceblue;
-    grid-column: 1/2;
-    grid-row: 3;
+    grid-area: footer;
 }
-.container{
-    grid-column: 1/2;
-    grid-row: 2;
-    display: flex;
-    width:100vw;
+nav{
+    grid-area: nav;
+}
+main{
+    grid-area: main;
 }

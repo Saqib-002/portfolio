@@ -16,3 +16,14 @@ code {
   padding: 0;
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: "Monofett";
+  src: local("Monofett"), 
+   url("./fonts/Monfet_Regular/Monofett-Regular.ttf") format("truetype");
+  }
+@font-face {
+  font-family: "prisma";
+  src: local("prisma"), 
+   url("./fonts/prisma/Prisma.ttf") format("truetype");
+  }

@@ -6,7 +6,6 @@ import { ReactComponent as HomeIcon } from "../../assets/home.svg";
 const Navigation=()=>{
     return (
         <>
-        <nav>
             <div className="menu-items"> 
                 <Link to="/home">
                 <div className="menu-item" menu-content="HOME">
@@ -32,7 +31,6 @@ const Navigation=()=>{
                     <HomeIcon className="menu-icon"/>
                 </div>
             </div>
-        </nav>
         <Outlet/>
         </>
     )

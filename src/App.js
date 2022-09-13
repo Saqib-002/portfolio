@@ -11,6 +11,8 @@ import Contact from "./routes/contact/contact";
 function App() {
   return (
     <div className="App">
+      <div className="header">HEADER</div>
+      <div class="container">
       <Routes>
         <Route path="/" element={<Navigation/>}>
           <Route index element={<Home/>}/>
@@ -20,6 +22,8 @@ function App() {
           <Route path="/contact" element={<Contact/>}/>
         </Route>
       </Routes>
+      </div>
+      <div className="footer">FOOTER</div>
     </div>
   );
 }

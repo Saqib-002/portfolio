@@ -1,9 +1,7 @@
-nav{
-    width: 10.5vw;
-}
+
 .menu-items{
-    width: 100vw;
-    height: 100vh;
+    width: 10.5vw;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,6 +23,8 @@ nav{
     background-color: white;
     text-align: center;
     position: absolute;
+    color:black;
+    font-weight: bold;
     z-index:-1;
     left:30px;
     border-top-right-radius: 15px;

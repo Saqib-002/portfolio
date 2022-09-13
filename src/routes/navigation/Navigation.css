@@ -22,7 +22,7 @@ nav{
 }
 .menu-item::after{
     content:attr(menu-content);
-    background-color: white;
+    background-color: #9dcae5;
     text-align: center;
     position: absolute;
     color:black;

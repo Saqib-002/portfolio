@@ -1,0 +1,29 @@
+.header{
+    height:10vh;
+    display: flex;
+}
+.logo{
+    width:50px;
+    height: 50px;
+    margin: auto;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.logo:hover{
+    transform: rotate(45deg);
+}
+.page{
+    width: 95vw;
+    text-align: center;
+    font-family: "prisma";
+    font-size: 50px;
+    animation: headerAnimation 1s ease-in-out;
+}
+@keyframes headerAnimation {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

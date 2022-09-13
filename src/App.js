@@ -7,13 +7,12 @@ import Home from "./routes/Home/home";
 import Projects from "./routes/projects/projects";
 import About from "./routes/about/about";
 import Contact from "./routes/contact/contact";
+import Header from "./components/header/header";
 
 function App() {
   return (
     <div className="App">
-      <header>
-      <div className="header">HEADER</div>
-      </header>
+      <Header/>
       <Routes>
         <Route path="/" element={<Navigation/>}>
           <Route index element={<Home/>}/>
@@ -23,9 +22,6 @@ function App() {
           <Route path="/contact" element={<Contact/>}/>
         </Route>
       </Routes>
-      <footer>
-      <div className="footer">FOOTER</div>
-      </footer>
     </div>
   );
 }

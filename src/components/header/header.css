@@ -18,7 +18,7 @@
     font-family: "prisma";
     font-size: 50px;
     padding-right:100px ;
-    animation: headerAnimation 0.5s ease-in-out;
+    animation: headerAnimation 0.3s ease-in-out;
 }
 @keyframes headerAnimation {
     from{

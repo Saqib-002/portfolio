@@ -3,11 +3,17 @@ import "./header.css";
 import logo from "../../assets/logo.png"
 const Header=()=>{
     const {pathname}=useLocation();
-    const path=pathname.split("/")[1];
+    let path=pathname.split("/")[1];
+    if(!path){
+        path='home'
+    }
     return (
         <header className="header">
             <img className="logo" src={logo} alt="ss"/>
-            <div className="page">{path}</div>
+            {path==='home' && <div className="page">{path}</div>}
+            {path==='projects' && <div className="page">{path}</div>}
+            {path==='contact' && <div className="page">{path}</div>}
+            {path==='about' && <div className="page">{path}</div>}
         </header>
     )
 }

@@ -17,13 +17,16 @@
     text-align: center;
     font-family: "prisma";
     font-size: 50px;
-    animation: headerAnimation 1s ease-in-out;
+    padding-right:100px ;
+    animation: headerAnimation 0.5s ease-in-out;
 }
 @keyframes headerAnimation {
     from{
+        letter-spacing:50px ;
         opacity: 0;
     }
     to{
+        letter-spacing:0px ;
         opacity: 1;
     }
 }

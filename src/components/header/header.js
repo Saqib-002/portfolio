@@ -10,10 +10,10 @@ const Header=()=>{
     return (
         <header className="header">
             <img className="logo" src={logo} alt="ss"/>
-            {path==='home' && <div className="page">{path.toUpperCase()}</div>}
+            {path==='home' && <div className="page">{path}</div>}
             {path==='projects' && <div className="page">{path}</div>}
             {path==='contact' && <div className="page">{path}</div>}
-            {path==='about' && <div className="page">{path}</div>}
+            {path==='about' && <div className="page">{path} <span className="about-me">Me</span></div>}
         </header>
     )
 }

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import {Routes,Route} from "react-router-dom";
 import './App.css';
 import Navigation from './routes/navigation/Navigation';
@@ -8,16 +9,21 @@ import Projects from "./routes/projects/projects";
 import About from "./routes/about/about";
 import Contact from "./routes/contact/contact";
 import Header from "./components/header/header";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+  });
   return (
     <div className="App">
       <Header/>
-      <div class="container">
+      <div className="container">
         <Routes>
           <Route path="/" element={<Navigation/>}>
-            <Route index element={<Home/>}/>
-            <Route path="/home" element={<Home/>}/>
+              <Route index element={<Home/>}/>
+              <Route path="/home" element={<Home/>}/>
             <Route path="/projects" element={<Projects/>}/>
             <Route path="/about" element={<About/>}/>
             <Route path="/contact" element={<Contact/>}/>

@@ -1,28 +1,16 @@
-.home{
-    width:89vw;
-    height: 90vh;
+.home-container{
+    width:100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-right: 10.5vw;
-    padding-bottom: 10vh;
+    background-color: transparent;
 }
 .name{
     font-family: 'Poppins';
     font-weight: 700;
     font-size: 60px;
-    animation: nameAnimation 1s ease-in-out 0s 1;
-}
-@keyframes nameAnimation {
-    from{
-        font-size: 40px;
-        opacity: 0;
-    }
-    to{
-        font-size: 60px;
-        opacity: 1;
-    }
 }
 .middle-name{
     color: #9dcae5;

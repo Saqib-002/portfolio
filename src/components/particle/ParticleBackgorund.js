@@ -8,8 +8,8 @@ const ParticleBackground = () => {
   const particlesInit = useCallback(async (engine) => {
     await loadFull(engine);
   }, []);
-
   return (
+    <>
       <Particles
         height="100vh"
         width="110vw"
@@ -17,6 +17,7 @@ const ParticleBackground = () => {
         init={particlesInit}
         options={particles_object}
       />
+    </>
   );
 };
 

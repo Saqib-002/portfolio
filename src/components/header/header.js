@@ -9,11 +9,11 @@ const Header=()=>{
     }
     return (
         <header className="header">
-            <img className="logo" src={logo} alt="ss"/>
+            <img className="logo" src={logo} alt="no logo found"/>
             {path==='home' && <div className="page">{path}</div>}
             {path==='projects' && <div className="page">{path}</div>}
             {path==='contact' && <div className="page">{path}</div>}
-            {path==='about' && <div className="page">{path} <span className="about-me">Me</span></div>}
+            {path==='about' && <div className="page">{path} <span className="about-page-header">Me</span></div>}
         </header>
     )
 }

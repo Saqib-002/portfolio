@@ -1,0 +1,15 @@
+.services-container{
+    padding:20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.services-heading{
+    text-align: center;
+    margin-top: 50px;
+    height: 100px;
+}
+.service-cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

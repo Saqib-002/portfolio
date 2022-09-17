@@ -1,0 +1,20 @@
+.project-card{
+    width: 580px;
+    height:300px;
+    margin: 30px 0px;
+    display: flex;
+    padding: 10px;
+}
+.laptop{
+    width: 280px;
+    height: 280px;
+}
+.project-name{
+    text-align: center;
+}
+.project-discription{
+    text-align: center;
+}
+area{
+    /* display: block; */
+}

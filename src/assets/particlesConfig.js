@@ -6,7 +6,7 @@ const particles={
     "position": "50% 50%",
     "repeat": "no-repeat",
     "size": "cover",
-    "opacity":1
+    "opacity":0
   },
   "fullScreen": {
     "zIndex": -2

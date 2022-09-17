@@ -2,6 +2,7 @@ import "./about.css";
 import aboutPic from "../../assets/background.jpg"
 import Services from "../../components/services/services";
 import Skills from "../../components/skills/skills";
+import Footer from "../../components/footer/footer";
 const About=()=>{
     return(
         <>
@@ -18,6 +19,7 @@ const About=()=>{
             </div>
             <Services/>
             <Skills/>
+            <Footer/>
         </>
     )
 } 

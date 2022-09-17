@@ -1,0 +1,14 @@
+.skills-container{
+}
+.skills-heading{
+    text-align: center;
+    margin: 10px 0px;
+}
+.skills-cards{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-left: 150px;
+    margin: 20px 0px;
+}

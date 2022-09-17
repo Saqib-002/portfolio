@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect,useState } from "react";
 import {Routes,Route} from "react-router-dom";
 import './App.css';
 import Navigation from './routes/navigation/Navigation';
@@ -11,17 +11,20 @@ import Contact from "./routes/contact/contact";
 import Header from "./components/header/header";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Themes from "./components/Themes/themes";
 
 function App() {
+  const [theme,setTheme]=useState('blue');
   useEffect(() => {
     AOS.init();
   });
   return (
     <div className="App">
-      <Header/>
+      <Themes setTheme={setTheme}/>
+      <Header theme={theme}/>
       <div className="container">
         <Routes>
-          <Route path="/" element={<Navigation/>}>
+          <Route path="/" element={<Navigation theme={theme}/>}>
               <Route index element={<Home/>}/>
               <Route path="/home" element={<Home/>}/>
             <Route path="/projects" element={<Projects/>}/>

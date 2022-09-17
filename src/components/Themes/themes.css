@@ -1,0 +1,70 @@
+.themes{
+    position: fixed;
+    width:190px;
+    height: 140px;
+    bottom: 100px;
+    right: -152px;
+    z-index: 10;
+    display: flex;
+}
+.theme-panel-open{
+    right: 0px;
+}
+.theme-panel-close{
+    right: -152px;
+}
+.theme-selector-out{
+    background-color: white;
+    height: 40px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    cursor: pointer;
+}
+.theme-selector{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius:5px;
+}
+.theme-colors-out{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+.theme-colors-heading{
+    color: black;
+    text-align: center;
+    margin: 5px 0px;
+}
+.theme-colors{
+    display: flex;
+    flex-wrap: wrap;
+    width: 150px;
+    background-color:white;
+}
+
+.themebox{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius:5px;
+    margin: 10px ;
+    cursor: pointer;
+}
+.blue{
+    background-color: rgb(46, 46, 113);
+}
+.purple{
+    background-color: rgb(47, 4, 47);
+}
+/* f for font color */
+.f-blue{
+    color: rgb(46, 46, 113);
+}
+.f-purple{
+    color: rgb(47, 4, 47);
+}

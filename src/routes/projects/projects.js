@@ -1,7 +1,12 @@
+import Footer from "../../components/footer/footer";
+import ProjectsList from "../../components/projects/projectsList";
 import "./projects.css";
 const Projects=()=>{
     return(
-        <div className="home">Projects</div>
+        <div className="home">
+            <ProjectsList/>
+            <Footer/>
+        </div>
     )
 } 
 

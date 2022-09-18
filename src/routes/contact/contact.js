@@ -1,10 +1,10 @@
 import ContactForm from "../../components/contactForm/contactForm";
 import Footer from "../../components/footer/footer";
 import "./contact.css";
-const Contact=()=>{
+const Contact=({theme})=>{
     return(
         <div className="contact-page">
-            <ContactForm/>
+            <ContactForm theme={theme}/>
             <Footer/>
         </div>    
     )

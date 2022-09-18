@@ -19,17 +19,17 @@ function App() {
     AOS.init();
   });
   return (
-    <div className="App">
-      <Themes setTheme={setTheme}/>
+    <div className={`App`}>
+      <Themes setTheme={setTheme} theme={theme}/>
       <Header theme={theme}/>
       <div className="container">
         <Routes>
           <Route path="/" element={<Navigation theme={theme}/>}>
-              <Route index element={<Home/>}/>
-              <Route path="/home" element={<Home/>}/>
+              <Route index element={<Home theme={theme}/>}/>
+              <Route path="/home" element={<Home theme={theme}/>}/>
             <Route path="/projects" element={<Projects/>}/>
-            <Route path="/about" element={<About/>}/>
-            <Route path="/contact" element={<Contact/>}/>
+            <Route path="/about" element={<About theme={theme}/>}/>
+            <Route path="/contact" element={<Contact theme={theme}/>}/>
           </Route>
         </Routes>
       </div>

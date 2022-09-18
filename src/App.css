@@ -1,5 +1,5 @@
 .App{
     display:flex;
     flex-direction: column;
-    background:linear-gradient(to right,black 50%, rgb(47, 4, 47));
+    background-color: #101010;
 }

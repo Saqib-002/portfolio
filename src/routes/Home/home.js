@@ -2,15 +2,16 @@ import Typewriter from "typewriter-effect";
 import "./home.css";
 import ParticleBackground from "../../components/particle/ParticleBackgorund"
 
-const Home = () => {
+const Home = ({theme}) => {
+    console.log(theme)
     return (
         <main className="home" data-aos="zoom-in">
             <ParticleBackground/>
             <div class="home-container">
                 <div className="name">
-                    Saqib <span className="middle-name">Ali</span> Shah
+                <span className={`f-${theme}`}>Saqib Ali</span> Shah
                 </div>
-                <div className="field-container">
+                <div className={`field-container f-${theme}`}>
                     <span className="pre-field">I am a </span>
                     <Typewriter
                         onInit={(typewriter) => {

@@ -1,3 +1,11 @@
+:root{
+    --blue-color:#035aa6;
+    --purple-color:#481380;
+    --green-color:#04A777;
+    --orange-color: #dd7631;
+    --pink-color:#c70039;
+    --cyan-color:#00909e;
+}
 .themes{
     position: fixed;
     width:190px;
@@ -9,9 +17,25 @@
 }
 .theme-panel-open{
     right: 0px;
+    animation: themePanelOpen 0.5s ease-in-out;
 }
 .theme-panel-close{
     right: -152px;
+    animation: themePanelClose 0.5s ease-in-out;
+}
+@keyframes themePanelOpen {
+    from{
+        right:-152px;
+    }to{
+        right:0px;
+    }
+}
+@keyframes themePanelClose {
+    from{
+        right:0px;
+    }to{
+        right:-152px;
+    }
 }
 .theme-selector-out{
     background-color: white;
@@ -55,16 +79,136 @@
     margin: 10px ;
     cursor: pointer;
 }
-.blue{
-    background-color: rgb(46, 46, 113);
-}
-.purple{
-    background-color: rgb(47, 4, 47);
-}
 /* f for font color */
+/* bc for border color */
+/* bg-a for background color of after pseudo selector */
+/* bg-h for background color on hover */
+/* bs for boxshadow */
+.blue{
+    background-color: var(--blue-color);
+}
 .f-blue{
-    color: rgb(46, 46, 113);
+    color: var(--blue-color);
+}
+.bc-blue{
+    border-color: var(--blue-color);
+}
+.bg-a-blue::after{
+    background-color: var(--blue-color);
+}
+.bg-a-blue:hover{
+    background-color: var(--blue-color);
+}
+.bs-blue{
+    background:linear-gradient(to right,black 60%, var(--blue-color));
+}
+
+
+
+
+
+/* purple class */
+
+.purple{
+    background-color: var(--purple-color);
 }
 .f-purple{
-    color: rgb(47, 4, 47);
+    color: var(--purple-color);
 }
+.bc-purple{
+    border-color: var(--purple-color);
+}
+.bg-a-purple::after{
+    background-color: var(--purple-color);
+}
+.bg-h-purple:hover{
+    background-color: var(--purple-color);
+}
+.bs-purple{
+    background:linear-gradient(to right,black 60%, var(--purple-color));
+}
+
+/* green class */
+
+.green{
+    background-color: var(--green-color);
+}
+.f-green{
+    color: var(--green-color);
+}
+.bc-green{
+    border-color: var(--green-color);
+}
+.bg-a-green::after{
+    background-color: var(--green-color);
+}
+.bg-h-green:hover{
+    background-color: var(--green-color);
+}
+.bs-green{
+    background:linear-gradient(to right,black 60%, var(--green-color));
+}
+
+/* orange class */
+
+.orange{
+    background-color: var(--orange-color);
+}
+.f-orange{
+    color: var(--orange-color);
+}
+.bc-orange{
+    border-color: var(--orange-color);
+}
+.bg-a-orange::after{
+    background-color: var(--orange-color);
+}
+.bg-h-orange:hover{
+    background-color: var(--orange-color);
+}
+.bs-orange{
+    background:linear-gradient(to right,black 60%, var(--orange-color));
+}
+
+/* pink class */
+
+.pink{
+    background-color: var(--pink-color);
+}
+.f-pink{
+    color: var(--pink-color);
+}
+.bc-pink{
+    border-color: var(--pink-color);
+}
+.bg-a-pink::after{
+    background-color: var(--pink-color);
+}
+.bg-h-pink:hover{
+    background-color: var(--pink-color);
+}
+.bs-pink{
+    background:linear-gradient(to right,black 60%, var(--pink-color));
+}
+
+/* cyan class */
+
+.cyan{
+    background-color: var(--cyan-color);
+}
+.f-cyan{
+    color: var(--cyan-color);
+}
+.bc-cyan{
+    border-color: var(--cyan-color);
+}
+.bg-a-cyan::after{
+    background-color: var(--cyan-color);
+}
+.bg-h-cyan:hover{
+    background-color: var(--cyan-color);
+}
+.bs-cyan{
+    background:linear-gradient(to right,black 60%, var(--cyan-color));
+}
+

@@ -6,10 +6,9 @@
     cursor: pointer;
     background-color: transparent;
     color: white;
-    border-radius: 10px;
+    border-radius: 2px;
     border: 2px solid cyan;
     padding: 10px 20px;
-    color: cyan;
     position: relative;
     overflow: hidden;
     transition: all 0.8s ease-in-out;
@@ -34,14 +33,13 @@
     width: 150px;
     height: 300px;
     position: absolute;
-    background-color:cyan;
     top: -10px;
     left: -100px;
     transform: rotate(-45deg);
     transition: all 0.8s ease-in-out;
 }
 .custom-btn:hover .custom-btn-style{
-    transform:scale(2);
+    transform: scaleX(5);
 }
 .custom-btn:hover::before{
     opacity: 1;

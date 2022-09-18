@@ -22,7 +22,8 @@
     width: 100vw;
     text-align: center;
     font-family: "prisma";
-    font-size: 50px;
+    font-size: 45px;
+    margin-top: 10px;
     animation: headerAnimation 0.3s ease-in-out;
 }
 @keyframes headerAnimation {

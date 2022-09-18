@@ -5,15 +5,17 @@
     align-items: center;
 }
 .skill-img{
+    background-color: rgb(75, 75, 75);
     width:60px;
     height: 60px;
+    padding: 5px;
     border-radius: 5px;
 }
 .skill-out-progress-bar{
     width:400px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    background-color: darkgray;
+    background-color: rgb(60, 60, 60);
     height: 30px;
     padding: 3px;
 }

@@ -1,8 +1,9 @@
 .skills-container{
+    margin-top: 60px;
 }
 .skills-heading{
     text-align: center;
-    margin: 10px 0px;
+    margin-bottom: 80px;
 }
 .skills-cards{
     width:100%;

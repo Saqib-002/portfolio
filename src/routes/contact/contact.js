@@ -5,7 +5,7 @@ const Contact=({theme})=>{
     return(
         <div className="contact-page">
             <ContactForm theme={theme}/>
-            <Footer/>
+            <Footer theme={theme}/>
         </div>    
     )
 } 

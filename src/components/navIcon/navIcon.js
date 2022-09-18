@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { ReactComponent as HomeIcon } from "../../assets/home.svg";
 
 import "./navIcon.css";
 const NavIcon=({path,theme})=>{
@@ -9,13 +8,13 @@ const NavIcon=({path,theme})=>{
             (
                 <Link to={`/${path}`}>
                     <div className={`menu-item bc-${theme} bg-a-${theme} bg-h-${theme}`} menu-content={path.toUpperCase()}>
-                        <HomeIcon className="menu-icon"/>
+                        <img src="/assets/home.svg" alt="" />
                     </div>
                 </Link>
             ):
             (
                 <div className={`menu-item bc-${theme} bg-a-${theme} bg-h-${theme}`} menu-content="RESUME">
-                    <HomeIcon className="menu-icon"/>
+                    <img src="/assets/home.svg" alt=""/>
                 </div>
             )
             }

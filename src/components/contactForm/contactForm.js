@@ -17,11 +17,11 @@ const ContactForm=({theme})=>{
                 <h2 className="contact-heading"><span className={`f-${theme}`}> Get </span> in touch.</h2>
                 <p className="contact-details">Fill out the form below with some info about your project/any query and i will get back to you as soon as i can.</p>
                 <form onSubmit={handleSubmit} className="contact-form">
-                    <FormInput theme={theme} label="Name" placeholder="Enter your Name" type="text" name="name" id="name"/>
-                    <FormInput theme={theme} label="Email" placeholder="Enter your Email" type="email" name="email" id="email"/>
-                    <FormInput theme={theme} label="Subject" placeholder="Enter Subject" type="text" name="subject" id="subject"/>
+                    <FormInput theme={theme} data-aos="fade-right" label="Name" placeholder="Enter your Name" type="text" name="name" id="name"/>
+                    <FormInput theme={theme} data-aos="fade-right" label="Email" placeholder="Enter your Email" type="email" name="email" id="email"/>
+                    <FormInput theme={theme} data-aos="fade-right" label="Subject" placeholder="Enter Subject" type="text" name="subject" id="subject"/>
                     <label htmlFor="message" >Message</label>
-                    <textarea placeholder="Write your message here." name="message" className={`message bc-f-${theme}`} id="message" cols="30" rows="10"></textarea>
+                    <textarea placeholder="Write your message here." name="message" data-aos="fade-right" className={`message bc-f-${theme}`} id="message" cols="30" rows="10"></textarea>
                     <CustomBtn label="Send" theme={theme}/>
                 </form> 
             </div>

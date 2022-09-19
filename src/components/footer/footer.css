@@ -25,6 +25,7 @@
     margin: 0px 20px;
 }
 .footer-icon:hover{
+    border: 1px solid blue;
     box-shadow: 0.1px 0.1px 10px 0.1px rgb(125, 125, 125);
 }
 .footer-icon img{

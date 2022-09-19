@@ -1,0 +1,11 @@
+
+.projects-heading{
+    text-align: center;
+    font-size:30px;
+    font-weight: 900;
+}
+.no-project{
+    font-size: 20px;
+    margin-top: 30px;
+    color: lightcoral;
+}

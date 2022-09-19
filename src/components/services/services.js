@@ -10,30 +10,23 @@ const Services=({theme})=>{
             {
                 id:1,
                 service:"Web Design",
-                serviceDetails: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio error, at nisi alias, est rerum incidunt placeat recusandae impedit, dignissimos amet laboriosam?",
+                serviceDetails: "Design beautifull, attractive and functional weebsites.",
                 imgName:"web_design.png",
                 "data_aos":"fade-right"
             },
             {
                 id:2,
-                service:"Creative Design",
-                serviceDetails: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio error, at nisi alias, est rerum incidunt placeat recusandae impedit, dignissimos amet laboriosam?",
-                imgName:"creative.png",
+                service:"Responsive Design",
+                serviceDetails: "look great on any screen size!",
+                imgName:"responsive.png",
                 "data_aos":"fade-up"
             },
             {
                 id:3,
-                service:"Responsive Design",
-                serviceDetails: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio error, at nisi alias, est rerum incidunt placeat recusandae impedit, dignissimos amet laboriosam?",
-                imgName:"responsive.png",
-                "data_aos":"fade-left"
-            },
-            {
-                id:4,
                 service:"Redesign Websites",
-                serviceDetails: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio error, at nisi alias, est rerum incidunt placeat recusandae impedit, dignissimos amet laboriosam?",
+                serviceDetails: "Redesign for a new acttractive design and optimal functionality.",
                 imgName:"redesign.png",
-                "data_aos":"fade-right"
+                "data_aos":"fade-left"
             }
         ])
     },[])

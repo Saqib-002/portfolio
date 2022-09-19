@@ -21,7 +21,7 @@ const About=({theme})=>{
             </div>
             <Services theme={theme}/>
             <Skills theme={theme}/>
-            <Footer/>
+            <Footer theme={theme}/>
         </>
     )
 } 

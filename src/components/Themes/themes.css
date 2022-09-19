@@ -82,6 +82,7 @@
 /* f for font color */
 /* bc for border color */
 /* bc-f for border color on focus */
+/* bc-h for border color on hover */
 /* bg-a for background color of after pseudo selector */
 /* bg-h for background color on hover */
 /* bs for boxshadow */
@@ -95,6 +96,9 @@
     border-color: var(--blue-color);
 }
 .bc-f-blue:focus{
+    border-color: var(--blue-color);
+}
+.bc-h-blue:hover{
     border-color: var(--blue-color);
 }
 .bg-a-blue::after{
@@ -134,6 +138,9 @@
 .bc-f-purple:focus{
     border-color: var(--purple-color);
 }
+.bc-h-purple:hover{
+    border-color: var(--purple-color);
+}
 
 /* green class */
 
@@ -156,6 +163,9 @@
     background:linear-gradient(to right,black 60%, var(--green-color));
 }
 .bc-f-green:focus{
+    border-color: var(--green-color);
+}
+.bc-h-green:hover{
     border-color: var(--green-color);
 }
 
@@ -184,6 +194,9 @@
 .bc-f-orange:focus{
     border-color: var(--orange-color);
 }
+.bc-h-orange:hover{
+    border-color: var(--orange-color);
+}
 
 /* pink class */
 
@@ -206,6 +219,9 @@
     background:linear-gradient(to right,black 60%, var(--pink-color));
 }
 .bc-f-pink:focus{
+    border-color: var(--pink-color);
+}
+.bc-h-pink:hover{
     border-color: var(--pink-color);
 }
 
@@ -232,5 +248,8 @@
 }
 
 .bc-f-cyan:focus{
+    border-color: var(--cyan-color);
+}
+.bc-h-cyan:hover{
     border-color: var(--cyan-color);
 }

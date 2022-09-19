@@ -5,22 +5,22 @@ const Footer=({theme})=>{
         <footer className="footer">
             <div className="socials">
                 <a href="https://github.com/Saqib-002">
-                    <div className={`footer-icon`} >
+                    <div className={`footer-icon bc-h-${theme}`} >
                         <img src="/assets/socials/github.svg" alt=""/>
                     </div>
                 </a>
                 <a href="https://www.facebook.com/syedsaqib.alishah.75">
-                    <div className={`footer-icon`} >
+                    <div className={`footer-icon bc-h-${theme}`} >
                         <img src="/assets/socials/facebook.svg" alt=""/>
                     </div>
                 </a>
                 <a href="https://twitter.com/saqibshah17201">
-                    <div className={`footer-icon`} >
+                    <div className={`footer-icon bc-h-${theme}`} >
                         <img src="/assets/socials/twitter.svg" alt=""/>
                     </div>
                 </a>
                 <a href="https://www.linkedin.com/in/saqib-ali-shah-b991941b8/">
-                    <div className={`footer-icon`} >
+                    <div className={`footer-icon bc-h-${theme}`} >
                         <img src="/assets/socials/linkedin.svg" alt=""/>
                     </div>
                 </a>

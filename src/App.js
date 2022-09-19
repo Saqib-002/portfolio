@@ -27,7 +27,7 @@ function App() {
           <Route path="/" element={<Navigation theme={theme}/>}>
               <Route index element={<Home theme={theme}/>}/>
               <Route path="/home" element={<Home theme={theme}/>}/>
-            <Route path="/projects" element={<Projects/>}/>
+            <Route path="/projects" element={<Projects theme={theme}/>}/>
             <Route path="/about" element={<About theme={theme}/>}/>
             <Route path="/contact" element={<Contact theme={theme}/>}/>
           </Route>

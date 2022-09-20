@@ -14,6 +14,11 @@
     right: -152px;
     z-index: 10;
     display: flex;
+    opacity: 0.3;
+    transition: all 0.3s ease-in-out;
+}
+.themes:hover{
+    opacity: 1;
 }
 .theme-panel-open{
     right: 0px;
@@ -80,6 +85,7 @@
     cursor: pointer;
 }
 /* f for font color */
+/* f-h for font color on hover */
 /* bc for border color */
 /* bc-f for border color on focus */
 /* bc-h for border color on hover */
@@ -90,6 +96,9 @@
     background-color: var(--blue-color);
 }
 .f-blue{
+    color: var(--blue-color);
+}
+.f-h-blue:hover{
     color: var(--blue-color);
 }
 .bc-blue{
@@ -123,6 +132,9 @@
 .f-purple{
     color: var(--purple-color);
 }
+.f-h-purple:hover{
+    color: var(--purple-color);
+}
 .bc-purple{
     border-color: var(--purple-color);
 }
@@ -148,6 +160,9 @@
     background-color: var(--green-color);
 }
 .f-green{
+    color: var(--green-color);
+}
+.f-h-green:hover{
     color: var(--green-color);
 }
 .bc-green{
@@ -178,6 +193,9 @@
 .f-orange{
     color: var(--orange-color);
 }
+.f-h-orange:hover{
+    color: var(--orange-color);
+}
 .bc-orange{
     border-color: var(--orange-color);
 }
@@ -206,6 +224,9 @@
 .f-pink{
     color: var(--pink-color);
 }
+.f-h-pink:hover{
+    color: var(--pink-color);
+}
 .bc-pink{
     border-color: var(--pink-color);
 }
@@ -232,6 +253,9 @@
     background-color: var(--cyan-color);
 }
 .f-cyan{
+    color: var(--cyan-color);
+}
+.f-h-cyan:hover{
     color: var(--cyan-color);
 }
 .bc-cyan{

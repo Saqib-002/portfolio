@@ -3,7 +3,8 @@
 }
 .skills-heading{
     text-align: center;
-    margin-bottom: 80px;
+    font-size: 40px;
+    margin-bottom: 70px;
 }
 .skills-cards{
     width:100%;
@@ -12,4 +13,27 @@
     flex-wrap: wrap;
     padding-left: 150px;
     margin: 20px 0px;
+}
+@media only screen and (max-width:1400px) {
+    .skills-cards{
+        padding-left: 100px;
+    }
+}
+@media only screen and (max-width:1200px) {
+    .skills-container{
+        margin-top: 50px;
+    }
+    .skills-heading{
+        font-size: 35px;
+    }
+}
+@media only screen and (max-width:1024px) {
+    .skills-cards{
+        padding-left: 0px;
+    }
+}
+@media only screen and (max-width:440px) {
+    .skills-heading{
+        font-size: 30px;
+    }
 }

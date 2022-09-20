@@ -21,3 +21,15 @@
 .form-input:focus{
     border: 1px solid blue;
 }
+
+@media only screen and (max-width: 420px) {
+    .form-input-label{
+        font-size: 13px;
+    }
+    .form-input{
+        width: 175px;
+        font-size: 13px;
+        height: 30px;
+        border-radius: 3px;
+    }
+}

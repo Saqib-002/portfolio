@@ -6,16 +6,17 @@ const ProjectCard = ({project,theme})=>{
             <div className="workplace">
                 <img src={`/assets/projects/${imgName}`} alt="" class="project-img"/>
                 <img src="/assets/laptop.svg" alt="not found" className="laptop" useMap="#project"/>
-                <div class={`project-link ${theme} ${liveUrl?"":"no-pointer-events"}`}>
-                    <a href={sourceUrl}>
+                <div class={`project-link ${theme}`}>
+                    {sourceUrl && <a href={sourceUrl}>
                         <img className="project-source" src="/assets/socials/github.svg" alt=""/>
-                    </a>
-                    <a href={liveUrl}>
+                    </a>}
+                    {liveUrl && <a href={liveUrl}>
                         <div class="live-preview">
                             <img className="live-img" src="/assets/eye.svg" alt="ssss"/>
                             <span>Live Preview</span>
                         </div>
-                    </a>
+                    </a>}
+                    {!(liveUrl && sourceUrl) && <div className="no-source"> Sorry no souce code and url</div>}
                 </div>
             </div>
             <div className="project-details">

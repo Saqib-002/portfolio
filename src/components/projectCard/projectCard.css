@@ -45,8 +45,9 @@
     justify-content: space-around;
     align-items: center;
 }
-.no-pointer-events{
-    pointer-events: none;
+.no-source{
+    color: white;
+    text-align: center;
 }
 .project-card:hover .project-link{
     opacity: 1;
@@ -88,15 +89,110 @@ a {
 .project-name{
     text-align: center;
     margin:10px ;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 600;
 }
 .project-discription{
     font-family: "Raleway";
-    font-size: 16px;
+    font-size: 20px;
     line-height: 20px;
     text-align: center;
 }
-area{
-    /* display: block; */
+@media only screen and (max-width:500px) {
+    .project-card{
+        width: 300px;
+        height:350px;
+        padding: 20px;
+    }
+    .laptop{
+        width: 250px;
+    }
+    .project-img{
+        width: 193px;
+        height: 126px;
+        top: 7px;
+        left: 29px;
+    }
+    
+    /* project links */
+    .project-link{
+        width:193px;
+        height: 126px;
+        top:7px;
+        left: 29px;
+    }
+    .project-card:hover .project-link{
+        top:7px;
+    }
+    .project-source{
+        width: 40px;
+        padding: 7px;
+    }
+    .live-preview{
+        padding: 3px 5px;
+    }
+    .live-img{
+        width: 30px;
+    }
+    /* project details */
+    
+    .project-name{
+        margin: 2px 10px ;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .project-discription{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width:320px) {
+    .project-card{
+        width: 180px;
+        height:350px;
+        padding: 10px;
+    }
+    .laptop{
+        width: 160px;
+    }
+    .project-img{
+        width: 124px;
+        height: 80px;
+        top: 5px;
+        left: 18px;
+    }
+    
+    /* project links */
+    .project-link{
+        width: 124px;
+        height: 80px;
+        top: 5px;
+        left: 18px;
+    }
+    .project-card:hover .project-link{
+        top:5px;
+    }
+    .project-source{
+        width: 25px;
+        padding: 3px;
+    }
+    .live-preview{
+        padding: 1px 3px;
+        font-size: 12px;
+    }
+    .live-img{
+        width: 20px;
+    }
+    /* project details */
+    
+    .project-name{
+        margin: 1px 8px ;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .project-discription{
+        font-size: 10px;
+    }
+    .no-source{
+        font-size: 13px;
+    }
 }

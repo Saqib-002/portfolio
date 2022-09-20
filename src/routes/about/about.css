@@ -1,6 +1,6 @@
 .about-container{
     text-align: center;
-    margin-top: 100px ;
+    margin-top: 80px ;
     height: 100%;
     font-family: "raleway";
 }
@@ -11,8 +11,8 @@
     display:flex;
     flex-direction: row-reverse;
     justify-content: space-around;
-    align-items: flex-start;
-    margin-top: 50px;
+    align-items: center;
+    margin-top: 100px;
 }
 .about{
     width: 600px;
@@ -23,23 +23,120 @@
     justify-content: center;
 }
 .about-bio{
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 700;
     font-family: "Nunito";
 }
 .about-details{
-    font-size: 20px;
+    font-size: 25px;
     margin-top: 20px;
-    line-height: 20px;
+    line-height: 30px;
     font-family: "Poppins";
 }
 .about-pic{
-    width: 350px;
-    height: 350px;
+    width: 400px;
+    height: 380px;
     border: 2px solid white;
     border-radius: 20px;
 }
 .download-resume-btn{
     margin: auto;
     margin-top: 40px;
+}
+@media only screen and (max-width:1280px) {
+    .about{
+        width: 500px;
+    }
+    .about-bio{
+        font-size: 30px;
+    }
+    .about-details{
+        font-size: 22px;
+    }
+}
+@media only screen and (max-width:1100px) {
+    .about{
+        width: 450px;
+    }
+    .about-pic{
+        width: 380px;
+    }
+    .about-bio{
+        font-size: 28px;
+    }
+    .about-details{
+        font-size: 19px;
+    }
+}
+@media only screen and (max-width:1024px) {
+    .about{
+        margin-left: 0px;
+        width: 440px;
+    }
+}
+@media only screen and (max-width:900px) {
+    .about-me{
+        flex-direction: column;
+        margin-top: 60px;
+    }
+    .about-pic{
+        margin-bottom: 50px;
+        height: 450px;
+        width: 390px;
+    }
+    .about{
+        width:500px
+    }
+    .about-bio{
+        font-size: 30px;
+    }
+    .about-details{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width:600px) {
+    .about-pic{
+        height: 300px;
+        width: 310px;
+    }
+    .about{
+        width:390px
+    }
+    .about-bio{
+        font-size: 25px;
+    }
+    .about-details{
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width:420px) {
+    .about-pic{
+        height: 200px;
+        width: 210px;
+    }
+    .about{
+        width:260px;
+        padding: 10px;
+    }
+    .about-bio{
+        font-size: 20px;
+    }
+    .about-details{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width:380px) {
+    .about-pic{
+        height: 200px;
+        width: 210px;
+    }
+    .about{
+        width:240px
+    }
+    .about-bio{
+        font-size: 25px;
+    }
+    .about-details{
+        font-size: 18px;
+    }
 }

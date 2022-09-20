@@ -36,3 +36,13 @@
 .copyright{
     font-size: 20px;
 }
+@media only screen and (max-width:440px) {
+    .footer-icon{
+        width:45px;
+        height: 45px;
+        margin: 0px 10px;
+    }
+    .copyright{
+        font-size: 16px;
+    }
+}

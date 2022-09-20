@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width:290px;
-    height: 340px;
+    width:340px;
+    height: 400px;
     text-align: center;
     background-color: rgb(29, 29, 29);
     border-radius: 20px;
@@ -16,8 +16,8 @@
     position: absolute;
     border-radius: 20px;
     top: 30px;
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
     transition: all 0.7s ease-in-out;
 }
 .serviceCard:hover .bg-color{
@@ -26,8 +26,8 @@
     transform:scale(3);
 }
 .service-img{
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
     padding: 10px;
     position: absolute;
     top: 30px;
@@ -37,10 +37,75 @@
 .service-heading{
     margin: 20px 0px;
     margin-top: 120px;
+    font-size: 25px;
+    font-weight: 700;
     position: relative;
 }
 .service-details{
     position: relative;
     width: 260px;
-    overflow: hidden;
+    font-size: 30px;
+}
+@media only screen and (max-width:1400px) {
+    .serviceCard{
+        width:300px;
+        height: 360px;
+    }
+    .service-img{
+        width: 95px;
+        height: 95px;
+    }
+    .bg-color{
+        width: 95px;
+        height: 95px;
+    }
+    .service-heading{
+        font-size: 23px;
+    }
+    .service-details{
+        font-size: 19px;
+    }
+}
+@media only screen and (max-width:800px) {
+    .serviceCard{
+        width:300px;
+        height: 360px;
+        padding: 20px;
+    }
+    .service-img{
+        width: 85px;
+        height: 85px;
+    }
+    .bg-color{
+        width: 85px;
+        height: 85px;
+    }
+    .service-heading{
+        font-size: 20px;
+    }
+    .service-details{
+        font-size: 17px;
+    }
+}
+@media only screen and (max-width:400px) {
+    .serviceCard{
+        width:300px;
+        height: 360px;
+        padding: 10px;
+    }
+    .service-img{
+        width: 75px;
+        height: 75px;
+    }
+    .bg-color{
+        width: 75px;
+        height: 75px;
+    }
+    .service-heading{
+        font-size: 18px;
+    }
+    .service-details{
+        font-size: 15px;
+        width: 180px;
+    }
 }

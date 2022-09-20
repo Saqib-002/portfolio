@@ -26,3 +26,35 @@
 .Typewriter__Wrapper{
     display: inline-block;
 }
+@media only screen and (max-width:768px) {
+    .name{
+        font-size: 50px;
+    }
+    .field-container{
+        font-size: 22px;
+    }
+}
+@media only screen and (max-width:600px) {
+    .name{
+        font-size: 40px;
+    }
+    .field-container{
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width:440px) {
+    .name{
+        font-size: 30px;
+    }
+    .field-container{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width:300px) {
+    .name{
+        font-size: 24px;
+    }
+    .field-container{
+        font-size: 13px;
+    }
+}

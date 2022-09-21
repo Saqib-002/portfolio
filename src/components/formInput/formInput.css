@@ -24,12 +24,22 @@
 
 @media only screen and (max-width: 420px) {
     .form-input-label{
+        font-size: 14px;
+    }
+    .form-input{
+        width: 270px;
+        font-size: 14px;
+        height: 35px;
+        border-radius: 3px;
+    }
+}
+@media only screen and (max-width: 340px) {
+    .form-input-label{
         font-size: 13px;
     }
     .form-input{
-        width: 175px;
+        width: 210px;
         font-size: 13px;
         height: 30px;
-        border-radius: 3px;
     }
 }

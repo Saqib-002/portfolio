@@ -2,6 +2,7 @@ nav{
     display:inline;
     position: fixed;
     z-index:15;
+    margin-left: 10px;
 }
 .menu-items{
     height: 100vh;

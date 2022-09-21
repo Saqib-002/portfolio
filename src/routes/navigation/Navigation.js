@@ -13,11 +13,11 @@ const Navigation=({theme})=>{
         <>
             <nav>
                 <div className="menu-items"> 
-                    <NavIcon theme={theme} path="home"/>
-                    <NavIcon theme={theme} path="projects"/>
-                    <NavIcon theme={theme} path="about"/>
-                    <NavIcon theme={theme} path="contact"/>
-                    <NavIcon theme={theme}/>
+                    <NavIcon theme={theme} imgName="home.svg" path="home"/>
+                    <NavIcon theme={theme} imgName="work.svg" path="projects"/>
+                    <NavIcon theme={theme} imgName="about.svg" path="about"/>
+                    <NavIcon theme={theme} imgName="contact.svg" path="contact"/>
+                    <NavIcon theme={theme} imgName="resume.svg"/>
                 </div>
                 <div className={`menu-items-2 ${isNavOpen?"navOpen":"navCLose"}`}>
                     {!isNavOpen && <img  onClick={toggleNavigation} className="nav-icon hamburger" src="/assets/hamburger.svg" alt=""/>}

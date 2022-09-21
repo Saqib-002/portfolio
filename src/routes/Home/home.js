@@ -7,7 +7,7 @@ const Home = ({theme}) => {
     return (
         <main className="home" data-aos="zoom-in">
             <ParticleBackground/>
-            <div class="home-container">
+            <div className="home-container">
                 <div className="name">
                 <span className={`f-${theme}`}>Saqib Ali</span> Shah
                 </div>

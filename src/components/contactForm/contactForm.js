@@ -13,11 +13,8 @@ const ContactForm=({theme})=>{
         console.log("Subject: ",e.target.subject.value);
         console.log("Message: ",e.target.message.value);
         emailjs.sendForm('contact_service','contact_form',form_ref.current,'z8AyekktlBiCMxwAq').then((result)=>{
-            console.log(result.text);
-            console.log(result);
             alert("Your message has been sent. Thank You!")
         }).catch((error)=>{
-            console.log(error.text);
             alert("Error while sending message!!")
         })
         form_ref.current.reset();

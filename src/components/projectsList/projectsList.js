@@ -12,7 +12,7 @@ const ProjectsList=({theme,heading,projectList})=>{
                 </div>
                 :
                 projectList && projectList.map((project)=>{
-                    return <ProjectCard project={project} theme={theme}/>
+                    return <ProjectCard key={project.id} project={project} theme={theme}/>
                 })
             }
         </div>

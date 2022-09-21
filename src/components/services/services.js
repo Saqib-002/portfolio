@@ -12,7 +12,7 @@ const Services=({theme})=>{
                 service:"Web Design",
                 serviceDetails: "Design beautifull, attractive and functional weebsites.",
                 imgName:"web_design.png",
-                "data_aos":"fade-right"
+                "data_aos":"fade-up"
             },
             {
                 id:2,
@@ -26,7 +26,7 @@ const Services=({theme})=>{
                 service:"Redesign Websites",
                 serviceDetails: "Redesign for a new acttractive design and optimal functionality.",
                 imgName:"redesign.png",
-                "data_aos":"fade-left"
+                "data_aos":"fade-up"
             }
         ])
     },[])

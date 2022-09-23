@@ -22,6 +22,42 @@
     color: white;
     margin-right: 8px;
 }
+.social-menu{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+.social-menu-item{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+.social-menu-item{
+    position: relative;
+}
+.social-menu-item img{
+    width: 30px;
+    height: 30px;
+}
+.social-menu-item::before{
+    content: attr(social-menu-name);
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    opacity: 0;
+    font-size: 14px;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+}
+.social-menu-item:hover::before{
+    right: 70px;
+    opacity: 1;
+}
 /* class for typeWriter from typeWriter library */
 .Typewriter__Wrapper{
     display: inline-block;
@@ -40,6 +76,9 @@
     }
     .field-container{
         font-size: 18px;
+    }
+    .social-menu{
+        display: none;
     }
 }
 @media only screen and (max-width:440px) {

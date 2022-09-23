@@ -23,7 +23,9 @@ const Navigation=({theme})=>{
                     }
                 </div>
                 <div class={`menu-items-container ${isNavOpen?"nav-open":"nav-close"}`}>
-                    <img className="my-pic" src="/assets/background.jpg" alt=""/>
+                    <div className="my-pic" style={{
+                        backgroundImage:`url(${"/assets/aboutPic.jpg"})`
+                    }}  ></div>
                     <div class="menu-items">
                         <div className="menu-item"><span className={`f-${theme}`}>SAQIB ALI</span>&nbsp; SHAH</div>
                         <Link onClick={toggleNavigation} to="/home">

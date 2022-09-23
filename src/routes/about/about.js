@@ -10,7 +10,9 @@ const About=({theme})=>{
                 <h2 className="about-heading">About <span className={`f-${theme}`}> Me.</span></h2>
                 <h2 className="about-subheading">Get To Know <span className={`f-${theme}`}> Me.</span></h2>
                 <div className="about-me">
-                    <img className="about-pic"src="/assets/background.jpg" alt="not fount"/>
+                    <div className="about-pic" style={{
+                        backgroundImage:`url(${"/assets/aboutPic.jpg"})`
+                    }}></div>
                     <div className="about">
                         <div className="about-bio">I am a <span className={`f-${theme}`}>web developer</span> and <span className={`f-${theme}`}>data scientist</span> based in Kahuta, Pakistan.</div>
                         <div className="about-details">I am a Computer Science Student currently studying from Institue of Space and Technologies <span className={`f-${theme}`}>(IST)</span>. I love to create beautifull & specially functional websites and enjoy while doing problem solving and coding. </div>

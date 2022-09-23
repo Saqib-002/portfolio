@@ -42,7 +42,10 @@
     width: 400px;
     height: 380px;
     margin: 30px;
-    border: 2px solid white;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter:grayscale(20%) contrast(120%);
     border-radius: 20px;
 }
 .download-resume-btn{

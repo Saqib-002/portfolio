@@ -7,7 +7,8 @@ const About=({theme})=>{
     return(
         <>
             <div className="about-container">
-                <h2 className="about-heading">Get To Know <span className={`f-${theme}`}> Me.</span></h2>
+                <h2 className="about-heading">About <span className={`f-${theme}`}> Me.</span></h2>
+                <h2 className="about-subheading">Get To Know <span className={`f-${theme}`}> Me.</span></h2>
                 <div className="about-me">
                     <img className="about-pic"src="/assets/background.jpg" alt="not fount"/>
                     <div className="about">

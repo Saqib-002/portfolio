@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { Outlet,Link} from "react-router-dom";
 import "./Navigation.css";
-import NavIcon from "../../components/navIcon/navIcon";
-
 
 const Navigation=({theme})=>{
     const [isNavOpen,setIsNavOpen] = useState(false);
@@ -11,30 +9,37 @@ const Navigation=({theme})=>{
     }
     return (
         <>
-            <nav>
-                <div className="menu-items"> 
-                    <NavIcon theme={theme} imgName="home.svg" path="home"/>
-                    <NavIcon theme={theme} imgName="work.svg" path="projects"/>
-                    <NavIcon theme={theme} imgName="about.svg" path="about"/>
-                    <NavIcon theme={theme} imgName="contact.svg" path="contact"/>
-                    <NavIcon theme={theme} imgName="resume.svg"/>
+            <nav class={`${isNavOpen?"nav-h-100":"nav-h-0"}`}>
+                <div class="nav-icon">
+                    <img className="logo" src="/assets/logo.png" alt=""/>
+                    {
+                        isNavOpen?(
+                            <img onClick={toggleNavigation} className="close-nav-btn" src="/assets/close.svg" alt=""/>
+                        ):(
+                            <div onClick={toggleNavigation} class="hamburger-icon">
+                                <div class="layer"></div> 
+                            </div>
+                        )
+                    }
                 </div>
-                <div className={`menu-items-2 ${isNavOpen?"navOpen":"navCLose"}`}>
-                    {!isNavOpen && <img  onClick={toggleNavigation} className="nav-icon hamburger" src="/assets/hamburger.svg" alt=""/>}
-                    {isNavOpen && <img onClick={toggleNavigation} className="nav-icon close" src="/assets/close.svg" alt=""/>}
-                    <Link onClick={toggleNavigation} to="/home">
-                        <span className={`menu-item-2 f-h-${theme}`}>HOME</span>
-                    </Link>
-                    <Link onClick={toggleNavigation} to="/projects">
-                        <span className={`menu-item-2 f-h-${theme}`}>PROJECTS</span>
-                    </Link>
-                    <Link onClick={toggleNavigation} to="/about">
-                        <span className={`menu-item-2 f-h-${theme}`}>ABOUT</span>
-                    </Link>
-                    <Link onClick={toggleNavigation} to="/contact">
-                        <span className={`menu-item-2 f-h-${theme}`}>CONTACT</span>
-                    </Link>
-                    <span onClick={toggleNavigation} className={`menu-item-2 f-h-${theme}`}>RESUME</span>
+                <div class={`menu-items-container ${isNavOpen?"nav-open":"nav-close"}`}>
+                    <img className="my-pic" src="/assets/background.jpg" alt=""/>
+                    <div class="menu-items">
+                        <div className="menu-item"><span className={`f-${theme}`}>SAQIB ALI</span>&nbsp; SHAH</div>
+                        <Link onClick={toggleNavigation} to="/home">
+                            <div className={`menu-item f-h-${theme}`}><span className="nav-number">01</span>HOME</div>
+                        </Link>
+                        <Link onClick={toggleNavigation} to="/about">
+                            <div className={`menu-item f-h-${theme}`}><span className="nav-number">02</span>ABOUT</div>
+                        </Link>
+                        <Link onClick={toggleNavigation} to="/projects">
+                            <div className={`menu-item f-h-${theme}`}><span className="nav-number">03</span>Projects</div>
+                        </Link>
+                        <Link onClick={toggleNavigation} to="/contact">
+                            <div className={`menu-item f-h-${theme}`}><span className="nav-number">04</span>CONTACT</div>
+                        </Link>
+                            <div onClick={toggleNavigation} className={`menu-item resume-nav f-h-${theme}`}><span className="nav-number">05</span>RESUME</div>
+                    </div>
                 </div>
             </nav>
             <Outlet/>

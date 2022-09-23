@@ -1,39 +1,23 @@
 .skills-container{
-    margin-top: 60px;
+    margin: 60px 80px;
 }
 .skills-heading{
     text-align: center;
     font-size: 40px;
+    font-weight: 700;
     margin-bottom: 70px;
 }
 .skills-cards{
     width:100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
-    padding-left: 150px;
-    margin: 20px 0px;
 }
-@media only screen and (max-width:1400px) {
-    .skills-cards{
-        padding-left: 100px;
-    }
-}
-@media only screen and (max-width:1200px) {
+@media only screen and (max-width:720px) {
     .skills-container{
-        margin-top: 50px;
+        margin: 40px 30px;
     }
     .skills-heading{
-        font-size: 35px;
-    }
-}
-@media only screen and (max-width:1024px) {
-    .skills-cards{
-        padding-left: 0px;
-    }
-}
-@media only screen and (max-width:440px) {
-    .skills-heading{
-        font-size: 30px;
+        font-size: 25px;
     }
 }

@@ -1,7 +1,5 @@
 .services-container{
-    padding:20px;
-    padding-left: 100px;
-    padding-right: 50px;
+    padding:10px;
 }
 .services-heading{
     text-align: center;
@@ -14,17 +12,10 @@
     justify-content: space-around;
     flex-wrap: wrap;
 }
-@media only screen and (max-width: 1024px) {
-    .services-container{
-        padding-left: 0px;
-        padding-right: 0px;
-    }
+@media only screen and (max-width:720px) {
     .services-heading{
-        font-size: 35px;
-    }
-}
-@media only screen and (max-width:440px) {
-    .services-heading{
-        font-size: 30px;
+        margin-top: 40px;
+        font-size: 25px;
+        height: 70px;
     }
 }

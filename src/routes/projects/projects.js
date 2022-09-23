@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react";
 import Footer from "../../components/footer/footer";
-import ProjectsList from "../../components/projectsList/projectsList";
+import ProjectCard from "../../components/projectCard/projectCard"
 import "./projects.css";
 const Projects=({theme})=>{
-    const [webProjects,setWebProjects]=useState([]);
-    const [dataScienceProjects,setDataScienceProjects]=useState([]);
+    const [projects,setProjects]=useState([]);
     useEffect(() => {
-        setWebProjects([
+        setProjects([
             {
                 id:1,
                 projectName:"Portfolio",
@@ -28,20 +27,23 @@ const Projects=({theme})=>{
                 imgName:"portfolio.png"
             }
         ]);
-        setDataScienceProjects([
-            {
-                id:1,
-                projectName:"Portfolio3",
-                projectDetails:"This is my portfolio3.This is my portfolio.This is my portfolio.This is my portfolio.This is my portfolio.This is my portfolio.This is my portfolio.This is my portfolio.This is my portfolio.This is my portfolio",
-                imgName:"portfolio.png"
-            }
-        ]);
     },[])
     return(
         <>
         <div className="projects">
-            <ProjectsList projectList={webProjects} theme={theme} heading="Web Projects"/>
-            <ProjectsList projectList={dataScienceProjects} theme={theme} heading="Data Science Projects"/>
+            <p className={`projects-heading f-${theme}`}>Projects</p>
+            <div class="projects-list">
+                {
+                    !projects[0]?
+                    <div className="no-project">
+                        No Projects to show
+                    </div>
+                    :
+                    projects && projects.map((project)=>{
+                        return <ProjectCard key={project.id} project={project} theme={theme}/>
+                    })
+                }
+            </div>
         </div>
         <Footer theme={theme}/>
         </>

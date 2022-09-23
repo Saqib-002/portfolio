@@ -23,7 +23,8 @@ const ContactForm=({theme})=>{
         <div className="contact">
             <iframe width="100%" height="900px" className="map"  title="map" scrolling="no" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=kahuta&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" ></iframe>
             <div className="contact-form-container">
-                <h2 className="contact-heading"><span className={`f-${theme}`}> Get </span> in touch.</h2>
+            <div class={`contact-heading f-${theme}`}>CONTACT Me.</div>
+                <h2 className="contact-subheading"><span className={`f-${theme}`}> Get </span> in touch.</h2>
                 <p className="contact-details">Fill out the form below with some info about your project/any query and i will get back to you as soon as i can.</p>
                 <form ref={form_ref} onSubmit={handleSubmit} className="contact-form">
                     <FormInput theme={theme} data-aos="fade-right" label="Name" placeholder="Enter your Name" type="text" name="name" id="name"/>

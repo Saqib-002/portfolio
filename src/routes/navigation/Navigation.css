@@ -1,67 +1,167 @@
 nav{
-    display:inline;
     position: fixed;
-    z-index:15;
-    margin-left: 10px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
+}
+.nav-h-0{
+    height: 0vh;
+}
+.nav-h-100{
+    height: 100vh;
+}
+.nav-icon{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+.logo{
+    width:50px;
+    height: 50px;
+    cursor: pointer;
+    position: relative;
+    top:-10px;
+    transition: all 0.3s ease-in-out;
+}
+.logo:hover{
+    transform: rotate(45deg);
+}
+.hamburger-icon{
+    cursor: pointer;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.layer{
+    background-color: white;
+    width: 50px;
+    height: 2px;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+}
+.layer::after,.layer::before{
+    content: "";
+    background-color: white;
+    width: 50px;
+    height: 2px;
+    position: absolute;
+    left: 0px;
+    transition: all 0.2s ease-in-out;
+}
+.layer::after{
+    top: 6px;
+}
+.layer::before{
+    top: -6px;
+}
+.hamburger-icon:hover .layer::before{
+    top: -12px;
+}
+.hamburger-icon:hover .layer::after{
+    top: 12px;
+}
+.menu-items-container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    display: flex;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.nav-close{
+    height: 0vh;
+}
+.nav-open{
+    height: 100vh;
+}
+.my-pic{
+    width: 400px;
+    height: 100%;
+    border: 2px solid white;
 }
 .menu-items{
-    height: 100vh;
+    padding-left:150px;
+}
+.menu-item{
+    color: white;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    font-size: 25px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 600;
+    height: 16.67vh;
+    transition: all 0.3s ease-in-out;
 }
-.menu-items-2{
-    display: none;
+.nav-number{
+    font-size: 20px;
+    padding-right: 10px;
+    text-decoration: underline;
+    font-weight: normal;
+    font-family: "Raleway";
 }
-
-@media only screen and (max-width:1024px) {
+.resume-nav{
+    cursor: pointer;
+}
+.close-nav-btn{
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top:20px;
+    right:20px;
+    z-index:1;
+}
+@media only screen and (max-width:850px){
     .menu-items{
+        padding-left: 60px;
+    }
+}
+@media only screen and (max-width:740px) {
+    .nav-icon{
+        padding: 15px;
+    }
+    .close-nav-btn{
+        right: 10px;
+        width: 50px;
+        height: 50px;
+    }
+    .menu-items{
+        padding-left: 10px;
+    }
+    .menu-item{
+        font-size: 20px;
+    }
+    .nav-number{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width:630px) {
+    .my-pic{
         display: none;
     }
-    .menu-items-2{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width:100vw;
-        height:0vh;
-        overflow: hidden;
-        background-color: black;
-        transition: all 0.6s ease-in-out;
-    }
-    .navOpen{
-        height: 100vh;
-    }
-    .navClose{
-        height: 0vh;
-    }
-    .nav-icon{
-        position: fixed;
-        right:20px;
-        top:15px;
-        cursor: pointer;
-        z-index: 20;
-    }
-    .menu-item-2{
-        color:white;
-        display: flex;
-        align-items: center;
+    .menu-item{
         justify-content: center;
-        height: 20vh;
-        text-align: center;
-        cursor: pointer;
-        font-size: 26px;
-        font-family: Helvetica, sans-serif;
-        font-weight: 600;
-        transition: all 0.3s ease-in-out;
+        width: 100vw;
+        padding-left: 0px;
     }
 }
-@media only screen and (max-width: 380px) {
-    .nav-icon{
-        right:10px;
-        top:8px;
+@media only screen and (max-width:290px){
+    .menu-item{
+        justify-content: flex-start;
+        padding-left: 20px;
+        font-size: 18px;
     }
-    .menu-item-2{
-        font-size:20px;
+    .nav-number{
+        font-size: 13px;
+    }
+    .close-nav-btn{
+        width: 35px;
+        height: 35px;
     }
 }

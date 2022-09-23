@@ -16,10 +16,10 @@ const Home = ({theme}) => {
                     <Typewriter
                         onInit={(typewriter) => {
                             typewriter
-                            .typeString("Web Developer.")
+                            .typeString("Software Developer.")
                             .pauseFor(1000)
                             .deleteAll()
-                            .typeString("Data Scientist.")
+                            .typeString("freeLancer.")
                             .start()
                         }}
                         options={{
